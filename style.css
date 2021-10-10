@@ -8,8 +8,23 @@ body{
     min-height:100%;
     background: goldenrod;
 }
-
-
+/* Game Board */
+.main-container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr); 
+    grid-template-rows: repeat(3,1fr);
+    background-color: white;
+    height: 530px;
+    width: 550px;
+    box-shadow: 0px 0px 12px 2px black;
+    
+}
+.grid-cell{
+    transition: all 90ms ease-in;
+}
+.grid-cell:hover{
+    background-color: green;
+}
 
 
 
