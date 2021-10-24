@@ -8,7 +8,7 @@ This project has the following fuctionalities:
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/tic-tac-toe).
 
-🔗 **Live preview:** [here](https://aminumado.github.io/#/)
+🔗 **Live preview:** [here](https://aminumado.github.io/Tic-Tac-Toe/)
 
 ## Built with
 
@@ -43,9 +43,9 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-s
 
 * Better knowledge of **Javascript** and **DOM**.
 * Modal popups.
-* Factory Functions
-* Design Patterns (Module Pattern)
-* AI Algorithm
+* Deepened knowledge of DOM manipulation
+* Learned more about Objects, Factory Functions and Module Pattern
+* Improved understanding of scope and closures
 
 ## Author
 
