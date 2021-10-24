@@ -12,11 +12,82 @@
     <header>
         <h1>Tic-Tac-Toe</h1>
     </header>
+    <div class="main-container">
+        <section id="p1-side" class="player-side">
+            <div class="player-name">
+                <p id="p1-name">Player 1</p>
+            </div>
+            <div class="player-icon" id="p1-icon">
+                <img src="IMG/user.png">
+            </div>
+            <div class="player-wins" id="p1-wins"></div>
+        </section>
+        <section id="p2-side" class="player-side">
+                <div class="player-name">
+                    <p id="p2-name">Player 2</p>
+                </div>
+                <div class="player-icon" id="p2-icon">
+                  <!--   <img src="IMG/computer.png"> -->
+                </div>
+                <div class="player-wins" id="p2-wins"></div>
+        </section>
+        <div class="game-board">
+            <div class="grid-cell" data-id="0"></div>
+            <div class="grid-cell" data-id="1"></div>
+            <div class="grid-cell" data-id="2"></div>
+            <div class="grid-cell" data-id="3"></div>
+            <div class="grid-cell" data-id="4"></div>
+            <div class="grid-cell" data-id="5"></div>
+            <div class="grid-cell" data-id="6"></div>
+            <div class="grid-cell" data-id="7"></div>
+            <div class="grid-cell" data-id="8"></div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="modal-container">
+        <div class="overlay active"></div>
+        <div class="modal-start-game active">
+            <h1>Choose your opponent</h1>
+            <section>
+                <div class="player-icon" id="p2-icon-1">
+                    <img src="IMG/user.png">
+                </div>
+                <p> Player </p>
+            </section>
+            <section>
+                <div class="player-icon" id="p2-icon-2">
+                <img src="IMG/computer.png">
+                </div>
+                <p id="p2-icon-text">Cortana</p>
+            </section>
+        </div>
 
-    <div class="main-container"></div>
-   
+        <form onsubmit = "return false">
+            <div class="modal-player-name">
+                <h2>Player Name</h2>
+                <input type="text" id="user-player1" required="" placeholder="Player 1"/>
+                <input type="text" id="user-player2" required="" placeholder="Player 2"/>
+                <button id="submit">Submit</button>
+                <button id="cancel" type="button">Cancel</button>
+            </div>
+        </form>
+        <form onsubmit = "return false">
+            <div class="modal-player-name-pvc">
+                <h2>Player Name</h2>
+                <input type="text" id="user-player1-pvc" required="" placeholder="Player 1"/>
+                <button id="submit-pvc">Submit</button>
+                <button id="cancel-pvc" type="button">Cancel</button>
+            </div>
+        </form>
+        <div class="modal-result">
+            <p id="result">You Win</p>
+            <button id="restart">Play Again</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
     <footer class="footer">
-        <p>Copyright © 2021 AminuMado</p>
+        <p>Copyright <span>©</span> 2021 AminuMado</p>
         <a href="https://github.com/AminuMado" target="_blank">
         <img class="github-logo" src="IMG/github-logo.svg"></a>
     </footer>
