@@ -383,8 +383,6 @@ const modal = (function(){
                 player1Wins.innerHTML = "";
                 player2Wins.innerHTML = "";
             }
-
-            
         }
         else return
     })
