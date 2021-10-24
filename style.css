@@ -249,7 +249,7 @@ p span{
 
 /* MEDIA QUERIES */
 
-  @media (max-width: 420px) {
+@media (max-width: 420px) {
     .modal-start-game {
         gap: 5px;
     }
@@ -276,7 +276,6 @@ p span{
         top: 290px;
         height: 20px;
     }
-
     .game-board{
         height: 410px;
         width: 550px;
@@ -285,5 +284,5 @@ p span{
     .footer{
       margin-top: 35%;
     }
-  }
+}
   
