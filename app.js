@@ -278,22 +278,21 @@ const displayController = (function() {
     const AIMovement = function(){
         let aiMove = AILogic.randomMove();
         let target = boardGrids[aiMove];
-        setTimeout(()=>{
-            fillGridCell(game.getCurrentPlayer().getMarker(),target);
-            gameBoard.markGrid(aiMove,game.getCurrentPlayer().getMarker());
-            if(game.gameOver() === "win"){
-                updateResultMessage(game.gameOver());
-                addStar(game.getCurrentPlayer());
-                return;
-            } 
-            else if(game.gameOver() === "draw"){
-                updateResultMessage(game.gameOver());  
-                return; 
-            }
-            game.switchTurns();
-            glowPlayerIcon(game.getCurrentPlayer());
+        fillGridCell(game.getCurrentPlayer().getMarker(),target);
+        gameBoard.markGrid(aiMove,game.getCurrentPlayer().getMarker());
+        if(game.gameOver() === "win"){
+            updateResultMessage(game.gameOver());
+            addStar(game.getCurrentPlayer());
+            return;
+        } 
+        else if(game.gameOver() === "draw"){
+            updateResultMessage(game.gameOver());  
+            return; 
+        }
+        game.switchTurns();
+        glowPlayerIcon(game.getCurrentPlayer());
         
-        }, 500);    
+  
     }
     return{addModal,removeModal,updatePlayerName,updatePlayerIcon,glowPlayerIcon,clearGridCell}
 })(); 

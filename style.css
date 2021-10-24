@@ -177,6 +177,9 @@ button {
 }
 .player-wins{
     height: 50px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .player-wins > img{
     height: 50px;
